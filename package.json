@@ -1,0 +1,52 @@
+{
+  "name": "ollama-assistant",
+  "displayName": "Ollama Assistant",
+  "description": "Integrate Ollama into Visual Studio Code",
+  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "publisher": "Yurztrul3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yurztrul3/ollama-assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yurztrul3/ollama-assistant/issues"
+  },
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ollama-assistant.ollamaChat"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ollama-assistant.ollamaChat",
+        "title": "Ollama Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.109.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript": "^5.9.3",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "eslint": "^9.11.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^0.0.12"
+  }
+}
