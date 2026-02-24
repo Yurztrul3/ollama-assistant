@@ -80,19 +80,6 @@ Starts a conversation with your local Ollama AI model and includes your current 
 - Large workspace files may slow down response times
 - Network issues with local Ollama server will cause connection errors
 
-## Release Notes
-
-### 1.0.0
-- Initial release
-- Basic Ollama integration
-- Workspace file inclusion feature
-- Enhanced response display
-
-### 1.0.1
-- Improved error handling
-- Better response formatting
-- Performance optimizations
-
 ## Contributing
 
 This is an open source project. Contributions are welcome!
