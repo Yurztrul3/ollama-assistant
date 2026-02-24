@@ -1,7 +1,5 @@
 # Ollama Assistant for Visual Studio Code
 
-![Ollama Assistant](https://raw.githubusercontent.com/Yurztrul3/ollama-assistant/main/images/ollama-icon.png)
-
 An extension that integrates Ollama AI into Visual Studio Code, allowing you to interact with local AI models directly from your editor.
 
 ## Features
